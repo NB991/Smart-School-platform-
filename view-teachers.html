@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض بيانات المعلمين</title>
+    <link rel="stylesheet" href="teachers.css">
+    <link rel="stylesheet" href="menu-button.css">
+</head>
+<body>
+    <div class="menu-btn" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="sidebar">
+        <h1>مدرسة حمدي عاشور</h1>
+        <br><a href="edit-teachers.html"> تعديل بيانات المعلمين </a>
+        <a href="index.html"> تسجيل خروج </a>
+    </div>
+
+
+    <div class="header">
+        <h1>بيانات المعلمين</h1>
+    </div>
+
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>الاسم</th>
+                    <th>الرقم القومي</th>
+                    <th>النصاب القانوني</th>
+                    <th>الانتداب</th>
+                </tr>
+            </thead>
+            <tbody id="teacherTable"></tbody>
+        </table>
+    </div>
+    <script src="view.js"></script>
+    <script src="menu-button.js"></script>
+</body>
+</html>
