@@ -42,14 +42,14 @@ html, body {
     background: black;
 }
 
-.home, .discover-more {
+.home, .discover-more, .comeing-up {
     width: 100%;
     background: #999999;
     color: white;
     text-align: center;
 }
 
-.home h2, .discover-more h2, .school-laws h2 {
+.home h2, .discover-more h2, .school-laws h2, .comeing-up h2 {
     padding-top: 15px;
     text-align: center;
 }
@@ -86,9 +86,17 @@ html, body {
     color: black;
 }
 
+.comeing-up p {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin: 10px;
+    color: black;
+}
+
 footer {
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
     color: lightgrey;
-}
+        }
