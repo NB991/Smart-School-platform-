@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const isValid = validUsers.some(user => user.username === username && user.password === password);
 
         if (isValid) {
-            window.location.href = 'edit-teachers.html';
+            window.location.href = 'view-teachers.html';
         } else {
             document.getElementById('error-message').textContent = "Invalid username or password!";
         }
