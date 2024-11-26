@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>إدارة المعلمين</title>
-  <link rel="stylesheet" href="teachers.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة المعلمين</title>
+    <link rel="stylesheet" href="teachers.css">
     <link rel="stylesheet" href="menu-button.css">
 </head>
 <body>
-               <div class="menu-btn" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="sidebar">
-            <h1>مدرسة حمدي عاشور</h1>
-            <br><a href="view-teachers.html"> عرض المعلمين </a> 
-            <a href="edit-teachers.html"> تعديل بيانات المعلمين </a>
-            <a href="index.html"> تسجيل خروج </a> 
-        </div> 
-    
-    
-    <div class="header"> 
-    <h1>تعديل بيانات المعلمين</h1>
-    </div> 
-    
-    
-  <div class="container">
-    <form id="teacherForm" class="form">
-      <label>
-        الاسم:
-        <input type="text" id="name" required>
-      </label>
-      <label>
-        الرقم القومي:
-        <input type="number" id="nationalId" required>
-      </label>
-      <label>
-        النصاب القانوني:
-        <input type="text" id="quota" required>
-      </label>
-      <label>
-        الانتداب:
-        <input type="text" id="delegation">
-      </label>
-      <button type="submit" class="btn">إضافة معلم</button>
-    </form>
-    <br><br><h2>المعلمين المسجلين</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>الاسم</th>
-          <th>الرقم القومي</th>
-          <th>النصاب القانوني</th>
-          <th>الانتداب</th>
-          <th>إجراءات</th>
-        </tr>
-      </thead>
-      <tbody id="teacherTable"></tbody>
-    </table>
-  </div>
-  <script src="admin.js"></script>
+    <div class="menu-btn" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="sidebar">
+        <h1>مدرسة حمدي عاشور</h1>
+        <br><a href="view-teachers.html"> عرض المعلمين </a>
+        <a href="edit-teachers.html"> تعديل بيانات المعلمين </a>
+        <a href="index.html"> تسجيل خروج </a>
+    </div>
+
+
+    <div class="header">
+        <h1>تعديل بيانات المعلمين</h1>
+    </div>
+
+
+    <div class="container">
+        <form id="teacherForm" class="form">
+            <label>
+                الاسم:
+                <input type="text" id="name" required>
+            </label>
+            <label>
+                الرقم القومي:
+                <input type="number" id="nationalId" required>
+            </label>
+            <label>
+                النصاب القانوني:
+                <input type="text" id="quota" required>
+            </label>
+            <label>
+                النصاب الفعلي:
+                <input type="text" id="realquota" required>
+            </label>
+            <label>
+                الانتداب:
+                <input type="text" id="delegation">
+            </label>
+            <label>
+                تاريخ التعيين:
+                <input type="date" id="date" required>
+            </label>
+            <button type="submit" class="btn">إضافة معلم</button>
+        </form>
+        <br><br><h2>المعلمين المسجلين</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>الاسم</th>
+                    <th>الرقم القومي</th>
+                    <th>النصاب القانوني</th>
+                    <th> النصاب الفعلي </th>
+                    <th>الانتداب</th>
+                    <th> تاريخ التعيين </th>
+                    <th>إجراءات</th>
+                </tr>
+            </thead>
+            <tbody id="teacherTable"></tbody>
+        </table>
+    </div>
+    <script src="admin.js"></script>
     <script src="menu-button.js"></script>
 </body>
-</html>
+  </html>
