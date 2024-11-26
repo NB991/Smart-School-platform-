@@ -34,7 +34,7 @@ function addTeacher(e) {
 
     const teachers = JSON.parse(localStorage.getItem('teachers')) || [];
     teachers.push({
-        name, nationalId, quota, delegation
+        name, nationalId, quota, realquota, delegation, date
     });
     localStorage.setItem('teachers', JSON.stringify(teachers));
 
