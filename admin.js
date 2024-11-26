@@ -28,9 +28,9 @@ function addTeacher(e) {
     const name = document.getElementById('name').value;
     const nationalId = document.getElementById('nationalId').value;
     const quota = document.getElementById('quota').value;
-    const name = document.getElementById('realquota').value;
+    const realquota = document.getElementById('realquota').value;
     const delegation = document.getElementById('delegation').value;
-    const name = document.getElementById('date').value;
+    const date = document.getElementById('date').value;
 
     const teachers = JSON.parse(localStorage.getItem('teachers')) || [];
     teachers.push({
