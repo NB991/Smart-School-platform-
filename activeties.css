@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background-color: lightgrey;
+}
+
+.header {
+    background-color: #004d99;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.activity {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: right;
+}
+
+.activity h2 {
+    color: #003366;
+    text-align: center;
+}
+
+.activity p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.activity span {
+    color: black;
+    font-weight: bold;
+}
+
+.note {
+    background-color: #fff3e0;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
