@@ -1,5 +1,5 @@
 .menu-btn {
-    position: absolute;
+    position: fixed;
     top: 25px;
     right: 20px;
     z-index: 1000;
@@ -9,11 +9,12 @@
     width: 30px;
     height: 25px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .menu-btn div {
     height: 4px;
-    background: white;
+    background: black;
     border-radius: 5px;
     transition: all 0.20s ease;
 }
